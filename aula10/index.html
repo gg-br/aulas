@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body
+    {
+        background-color: black;
+        font-size: 1.2em;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }    
+
+    div
+    {
+        background-color: gray;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        
+    }
+    </style>
+</head>
+
+<body>
+    <h1>olá mundo</h1>   
+
+    <div id="area">
+        Interaja aqui
+    </div>
+
+    <script>
+
+        var area = window.document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseover', entrar)
+        area.addEventListener('mouseout', sair)
+
+         function clicar() 
+         {
+            area.innerText = 'Clicou!'
+            area.style.background = 'green'
+         }
+         
+         function entrar()
+         {
+            area.innerText = 'Entrou!'
+            area.style.background = 'violet'
+         }
+
+         function sair()
+         {
+            area.innerText = 'Saiu!'
+            area.style.background = 'white'
+         }
+
+    </script>
+</body>
+
+
+</html>
