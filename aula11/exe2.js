@@ -1,0 +1,1 @@
+var país = 'EUA'
